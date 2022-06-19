@@ -1,0 +1,51 @@
+.page-main__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: $font-thickness;
+}
+
+.form {
+  text-align: center;
+}
+
+.form-info {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.data {
+  border: none;
+}
+
+.data__list {
+  list-style: none;
+}
+
+.form__label {
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program-type-form__list {
+  list-style: none;
+}
+
+.option__list {
+  list-style: none;
+}
+
+.form__button {
+  border: none;
+}
+
+.form__button-text {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 16px;
+}

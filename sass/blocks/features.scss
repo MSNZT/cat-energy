@@ -1,0 +1,144 @@
+.features--bottom {
+  padding-top: 27px;
+}
+
+.features__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.features__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: $font-thickness;
+  margin: 0 0 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 183px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: section;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+}
+
+.features__item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 20px;
+
+  &:nth-last-child(1) {
+    margin-bottom: 46px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: -72px;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../img/leaf.svg");
+  }
+
+  &--tub::before {
+    background-image: url("../img/tub.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../img/eat.svg");
+  }
+
+  &--alarm::before {
+    background-image: url("../img/alarm.svg");
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      counter-increment: section;
+      content: counters(section, ".") " ";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      top: -53px;
+      right: 31px;
+      z-index: -1;
+      color: $grey-100;
+    }
+
+    @media (min-width: $desktop-width) {
+      counter-increment: section;
+      content: counters(section, ".") " ";
+      top: -53px;
+      right: 11px;
+      font-size: 280px;
+      line-height: 280px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 265px;
+    margin-bottom: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.features__description {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

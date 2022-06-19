@@ -1,0 +1,28 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  font-family: ("Oswald", sans-serif);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  min-height: 100%;
+  margin: 0;
+  color: $black;
+  position: relative;
+}
+
+.page__body::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("..//img/Group.png");
+    background-repeat: no-repeat;
+    height: 694px;
+    width: 720px;
+    z-index: -1;
+  }
+}

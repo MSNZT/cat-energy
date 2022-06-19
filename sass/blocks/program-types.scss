@@ -1,0 +1,124 @@
+.program-types--bottom {
+  padding-top: 22px;
+}
+
+.program-types__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+
+  }
+}
+
+.program-type {
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.program-type__content {
+  padding: 0 20px;
+  background-color: $grey-100;
+  margin-bottom: 20px;
+  position: relative;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+  }
+
+  &--slim::before {
+    left: 22px;
+    width: 50px;
+    height: 53px;
+    background-image: url("..//img/icon-slim.svg");
+  }
+
+  &--pro::before {
+    left: 13px;
+    width: 67px;
+    height: 50px;
+    background-image: url("..//img/icon-pro.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 284px 53px 52px
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 466px;
+    padding: 77px 52px 55px;
+    margin: 0;
+  }
+}
+
+.program-type__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: $font-thickness;
+  text-transform: uppercase;
+  margin: 0 0 29px;
+  padding-top: 30px;
+  padding-left: 72px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 24px;
+  }
+}
+
+.program-type__text {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+}
+
+.program-type__text--layout {
+  padding-bottom: 23px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+  }
+}
+
+.program-type__link {
+  color: $black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-type__link--indents {
+  display: inline-block;
+  padding-top: 15px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
