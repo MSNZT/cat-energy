@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: $green-600;
+  color: $white;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $green-700;
+}
+
+.button:active {
+  color: rgba(#ffffff, 0.3);
+}

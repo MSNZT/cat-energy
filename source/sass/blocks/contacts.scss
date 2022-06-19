@@ -1,0 +1,26 @@
+.contacts__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.contacts__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.contacts__info {
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 140px;
+  margin: 0;
+}
+
+.contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $second-font;
+  width: 140px;
+  margin: 0;
+}

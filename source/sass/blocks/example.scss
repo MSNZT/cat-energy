@@ -1,0 +1,178 @@
+.example {
+  background-color: $grey-100;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-100;
+  }
+}
+
+.example-wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+  }
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: $font-thickness;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 40px;
+    padding-bottom: 63px;
+  }
+}
+
+.example__description {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 54px;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    justify-content: stretch;
+  }
+}
+
+.example__item {
+  position: relative;
+  width: 123px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+  }
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 15px 0;
+}
+
+.example__name {
+  position: absolute;
+  right: 0;
+  left: 23px;
+  bottom: -3px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $second-font;
+  color: $grey-800;
+  padding: 0 1px;
+  background-color: $grey-100;
+  width: 77px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-100;
+  }
+}
+
+.example__price {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.example__price-value {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: right;
+  }
+}
+
+.example__result {
+  position: relative;
+  padding-top: 290px;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--before::before {
+    top: 42px;
+    left: 0;
+    right: 0;
+    width: 311px;
+    height: 232px;
+    background-image: url("../img/before-mobile.png");
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.range__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 31px;
+  list-style: none;
+}
+
+.range__scale {
+  width: 72px;
+  height: 6px;
+  border: 1px solid $grey-400;
+  padding: 3px 5px;
+  background-color: $white;
+  border-radius: 6px;
+}
+
+.range__bar {
+  width: 35px;
+  height: 6px;
+  background-color: $green-600;
+  border-radius: 6px;
+}
+
+.range__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  background-color: none;
+  text-transform: uppercase;
+}

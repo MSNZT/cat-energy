@@ -1,0 +1,59 @@
+{
+  "name": "cat-energy",
+  "private": true,
+  "description": "Личный проект «cat-energy» от HTML Academy",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "10.4.7",
+    "browser-sync": "2.27.10",
+    "gulp": "4.0.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "postcss": "8.4.14",
+    "stylelint": "14.9.0",
+    "stylelint-config-htmlacademy": "0.1.12"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "deploy": "gh-pages -d source",
+    "build": "gulp styles",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
+  "engines": {
+    "node": "16.15.1"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "lodash": "^4.17.21",
+    "sass": "^1.52.3"
+  },
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSNZT/cat-energy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MSNZT/cat-energy/issues"
+  },
+  "homepage": "https://MSNZT.github.io/cat-energy"
+}

@@ -1,0 +1,35 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  height: 66px;
+
+  // @media (min-width: @tablet-width) {
+    
+  // }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 709px;
+      margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: 1220px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
