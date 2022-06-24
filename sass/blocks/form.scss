@@ -1,46 +1,240 @@
-.page-main__title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: $font-thickness;
-}
+.form__wrapper {
+  margin: 0 auto;
+  width: 280px;
 
-.form {
-  text-align: center;
+  @media (min-width: $tablet-width) {
+    width: 667px;
+  }
 }
 
 .form-info {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0 0 39px;
 }
 
 .form__title {
   font-size: 24px;
   line-height: 26px;
-}
+  padding: 26px 0 0;
+  margin-bottom: 35px;
+  max-width: 181px;
+  position: relative;
+  display: inline-block;
+  padding-right: 22px;
+  background-color: $white;
 
-.data {
-  border: none;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    width: 100vw;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+  }
 }
 
 .data__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.data__item {
+  margin-bottom: 13px;
+}
+
+.data__item:nth-last-child(1) {
+  margin-bottom: 24px;
+}
+
+.data {
+  margin: 0;
+  padding: 0;
+  border: none;
+  // border-bottom: 1px solid #d9d9d9;
+  position: relative;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100vw;
+  //   height: 1px;
+  //   background-color: #d9d9d9;
+  // }
 }
 
 .form__label {
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.field {
+  padding: 13px 15px;
+  margin-left: 13px;
+  border: 1px solid #E7E7E7;
+  width: 100%;
 }
 
 .program-type-form__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+}
+
+.program-type-form__item {
+  margin-bottom: 25px;
+}
+
+.program-type-form__item:first-child {
+  padding-top: 22px;
+}
+
+.program-type-form__item:last-child {
+  margin-bottom: 20px;
+}
+
+.review-field__area {
+  text-transform: uppercase;
+}
+
+.area {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  display: block;
+  padding: 9px 13px;
+  width: 100%;
+  border: 1px solid $grey-400;
+  color: #444444;
+  box-sizing: border-box;
+}
+
+.option {
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.check {
+  padding-left: 45px;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__radio {
+  position: absolute;
+  margin-left: -45px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid $grey-400;
+  align-items: center;
+}
+
+.check__input:hover+.check__radio {
+  border: 1px solid #bababa;
+}
+
+.check__input:focus+.check__radio {
+  border: 1px solid #bababa;
+}
+
+// Checked
+
+.check__input:checked+.check__radio::after {
+  content: "";
+  position: absolute;
+  top: 28%;
+  left: 28%;
+  width: 13px;
+  height: 13px;
+  background-color: $green-600;
+  border-radius: 50%;
+}
+
+.check__input:checked:focus+.check__radio::after {
+  content: "";
+  position: absolute;
+  top: 28%;
+  left: 28%;
+  width: 13px;
+  height: 13px;
+  background-color: $green-600;
+  border-radius: 50%;
 }
 
 .option__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.option__item {
+  margin-bottom: 25px;
+}
+
+.check__box {
+  position: absolute;
+  margin-left: -45px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid $grey-400;
+}
+
+.check__input:hover+.check__box {
+  border: 1px solid #bababa;
+}
+
+.check__input:focus+.check__box {
+  border: 1px solid #bababa;
+}
+
+.check__input:checked+.check__box::after {
+  content: "";
+  position: absolute;
+  top: 24%;
+  left: 17%;
+  width: 18px;
+  height: 14px;
+  background-image: url("..//img/tick-checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+.check__input:checked:focus+.check__box::after {
+  content: "";
+  position: absolute;
+  top: 24%;
+  left: 17%;
+  width: 18px;
+  height: 14px;
+  background-image: url("..//img/tick-checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+.submit-form__wrapper {
+  text-align: center;
 }
 
 .form__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  padding: 7px 20px;
+  margin-bottom: 21px;
   border: none;
 }
 
@@ -48,4 +242,6 @@
   font-family: $second-font;
   font-size: 14px;
   line-height: 16px;
+  display: inline-block;
+  margin-bottom: 32px;
 }

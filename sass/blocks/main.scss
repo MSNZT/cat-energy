@@ -1,5 +1,17 @@
+
+.main__wrapper {
+  overflow-x: hidden;
+}
+
 .main-title {
   font-size: 36px;
   line-height: 36px;
   font-weight: $font-thickness;
+}
+
+.page-main__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: $font-thickness;
+  margin: 0 0 37px;
 }
