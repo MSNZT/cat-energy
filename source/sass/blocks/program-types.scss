@@ -7,7 +7,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 707px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,7 +17,6 @@
 }
 
 .program-type {
-
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -38,6 +37,10 @@
     content: "";
     position: absolute;
     top: 24px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &--slim::before {
@@ -45,6 +48,7 @@
     width: 50px;
     height: 53px;
     background-image: url("..//img/icon-slim.svg");
+    background-repeat: no-repeat;
   }
 
   &--pro::before {
@@ -54,13 +58,63 @@
     background-image: url("..//img/icon-pro.svg");
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &--slim::after {
+    @media (min-width: $tablet-width) {
+      top: 81px;
+      right: 61px;
+      width: 200px;
+      height: 211px;
+      background-image: url("..//img/slim-tablet.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--slim::after {
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      left: 52px;
+      width: 100px;
+      height: 106px;
+      background-image: url("..//img/slim-desktop.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--pro::after {
+    @media (min-width: $tablet-width) {
+      top: 91px;
+      right: 18px;
+      width: 268px;
+      height: 200px;
+      background-image: url("..//img/pro-tablet.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--pro::after {
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      left: 33px;
+      width: 134px;
+      height: 100px;
+      background-image: url("..//img/pro-desktop.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+
   @media (min-width: $tablet-width) {
-    padding: 77px 284px 53px 52px
+    padding: 77px 282px 53px 52px
   }
 
   @media (min-width: $desktop-width) {
     width: 466px;
-    padding: 77px 52px 55px;
+    padding: 77px 61px 55px;
     margin: 0;
   }
 }
@@ -78,6 +132,12 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 24px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-bottom: 73px;
   }
 }
 
@@ -95,11 +155,15 @@
 }
 
 .program-type__text--layout {
-  padding-bottom: 23px;
+  margin-bottom: 23px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 48px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
   }
 }
 
@@ -120,5 +184,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
   }
 }

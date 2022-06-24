@@ -2,20 +2,39 @@
   background-color: $grey-100;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
+    background-image: linear-gradient(180deg,#fff 634px,transparent 113px),linear-gradient(90deg,$grey-200 50%,$grey-200 50%);
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $grey-100;
+    background-image: linear-gradient(180deg,#fff 167px,transparent 113px),linear-gradient(90deg,#f2f2f2 50%,#f2f2f2 50%);
   }
 }
 
-.example-wrapper {
+.example__wrapper {
   width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 707px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 75px;
+    width: 1220px;
+  }
+}
+
+.example__column {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+    margin-bottom: 0;
   }
 }
 
@@ -33,6 +52,10 @@
     padding-top: 40px;
     padding-bottom: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 146px;
+  }
 }
 
 .example__description {
@@ -42,6 +65,8 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
     margin: 0 0 54px;
   }
 }
@@ -50,6 +75,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
   }
 }
 
@@ -68,9 +98,10 @@
 
 .example__item {
   position: relative;
-  width: 123px;
+  width: 124px;
 
   @media (min-width: $tablet-width) {
+    width: 162px;
     margin-right: 42px;
   }
 }
@@ -82,23 +113,47 @@
   border: 1px solid #dedede;
   border-radius: 5px;
   padding: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__name {
-  position: absolute;
-  right: 0;
-  left: 23px;
-  bottom: -3px;
   font-size: 12px;
   line-height: 12px;
-  font-family: $second-font;
+  font-family: "Arial", sans-serif;
+  position: absolute;
+  top: 59px;
+  left: 22px;
+  right: 0;
+  padding: 0 10px;
+  width: 59px;
   color: $grey-800;
-  padding: 0 1px;
   background-color: $grey-100;
-  width: 77px;
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+    top: 88px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0 7px;
     background-color: $white;
+  }
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      width: 97px;
+    }
+  }
+
+  &--second {
+    @media (min-width: $tablet-width) {
+      width: 127px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -112,18 +167,40 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 29px;
+  }
 }
 
 .example__price-value {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: right;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-left: 63px;
   }
 }
 
 .example__result {
   position: relative;
   padding-top: 290px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 
   &::before {
     content: "";
@@ -140,6 +217,63 @@
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: $tablet-width) {
+      top: -250px;
+      left: 0;
+      right: 330px;
+      width: 358px;
+      height: 620px;
+      background-image: url("../img/before-tablet.png");
+      background-repeat: no-repeat;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -557px;
+      left: -77px;
+      right: 330px;
+      width: 358px;
+      height: 620px;
+      background-image: url("../img/before-desktop.png");
+      background-repeat: no-repeat;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--after::after {
+      top: -250px;
+      left: 173px;
+      right: 0;
+      width: 153px;
+      height: 620px;
+      background-image: url("../img/after-tablet.png");
+      background-repeat: no-repeat;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--after::after {
+      top: -557px;
+      left: 134px;
+      right: 0;
+      width: 153px;
+      height: 620px;
+      background-image: url("../img/after-desktop.png");
+      background-repeat: no-repeat;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
@@ -150,6 +284,15 @@
   align-items: center;
   padding: 0 0 31px;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.range-controls {
+  padding: 0 15px;
 }
 
 .range__scale {
@@ -159,6 +302,14 @@
   padding: 3px 5px;
   background-color: $white;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    padding: 0;
+    border: none;
+    background-color: #dcdcdc;
+    position: relative;
+  }
 }
 
 .range__bar {
@@ -166,6 +317,28 @@
   height: 6px;
   background-color: $green-600;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.range__toggle {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 10px solid $white;
+      background-color: $green-600;
+      filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+      cursor: pointer;
+    }
+  }
 }
 
 .range__button {
@@ -173,6 +346,26 @@
   font-size: 16px;
   line-height: 20px;
   border: none;
-  background-color: none;
+  background-color: $grey-100;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    background-color: $grey-200;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      border-bottom: 2px dotted $black;
+      opacity: 0.4;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-100;
+  }
+
 }

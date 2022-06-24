@@ -38,13 +38,13 @@
 
   <main class="page-main">
 
-    <div class="page-main__wrapper">
-      <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
+    <div class="main__wrapper">
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form-info">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <div class="form__wrapper">
-          <fieldset class="data">
+          <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
+          <fieldset class="data data-form">
+            <p class="form-info">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
             <legend class="visually-hidden">Данные питомца</legend>
             <ul class="data__list">
               <li class="data__item">
@@ -67,102 +67,111 @@
               </li>
             </ul>
           </fieldset>
-        </div>
 
-        <div class="form__wrapper">
           <fieldset class="data program-type-form">
             <legend class="visually-hidden">Тип программы</legend>
             <ul class="program-type-form__list">
               <li class="program-type-form__item">
-                <label class="form__label">
-                  <input class="visually-hidden" type="radio" name="program-type" value="weight-loss" checked>
+                <label class="check option">
+                  <input class="check__input" type="radio" name="program-type" value="weight-loss">
+                  <span class="check__radio"></span>
                   похудение
                 </label>
               </li>
               <li class="program-type-form__item">
-                <label class="form__label">
-                  <input class="visually-hidden" type="radio" name="program-type" value="weight-gain">
+                <label class="check option">
+                  <input class="check__input" type="radio" name="program-type" value="weight-gain">
+                  <span class="check__radio"></span>
                   Набор массы
                 </label>
               </li>
               <li class="program-type-form__item">
-                <label class="form__label">
-                  <input class="visually-hidden" type="radio" name="program-type" value="advice">
+                <label class="check option">
+                  <input class="check__input" type="radio" name="program-type" value="advice">
+                  <span class="check__radio"></span>
                   Не знаю (Нужен ваш совет)
                 </label>
               </li>
             </ul>
           </fieldset>
-        </div>
 
-        <fieldset class="data owner-data">
-          <legend class="form__title">Контактные данные (владельца кота)</legend>
-          <ul class="data__list">
-            <li class="data__item">
-              <label class="form__label">
-                E-mail:*
-                <input class="data-field field data-field--icon" type="text" placeholder="кuklachev@gmail.com">
-              </label>
-            </li>
-            <li class="data__item">
-              <label class="form__label">
-                Телефон:*
-                <input class="data-field field data-field--icon" type="text" placeholder="8 (960) 900-60-90">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="data owner-data">
+            <legend class="form__title">Контактные данные (владельца кота)</legend>
+            <ul class="data__list">
+              <li class="data__item">
+                <label class="form__label">
+                  E-mail:*
+                  <input class="data-field field data-field--icon" type="email" placeholder="кuklachev@gmail.com">
+                </label>
+              </li>
+              <li class="data__item">
+                <label class="form__label">
+                  Телефон:*
+                  <input class="data-field field data-field--icon" type="number" placeholder="8 (960) 900-60-90">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="data review">
-          <legend class="form__title">Комментарий</legend>
-          <div class="review-field">
-            <textarea class="review-field__area area" name="review" cols="30" rows="10"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
+          <fieldset class="data review">
+            <legend class="form__title">Комментарий</legend>
+            <div class="review-field">
+              <textarea class="review-field__area area" name="review" cols="30" rows="10"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="data">
+            <legend class="form__title">Дополнительно</legend>
+            <ul class="option__list">
+              <li class="option__item">
+                <label class="check option">
+                  <input class="check__input" type="checkbox" name="option" value="sweetener" checked>
+                  <span class="check__box"></span>
+                  сахарозаменитель
+                </label>
+              </li>
+              <li class="option__item">
+                <label class="check option">
+                  <input class="check__input" type="checkbox" name="option" value="drinking-water">
+                  <span class="check__box"></span>
+                  питьевая вода
+                </label>
+              </li>
+              <li class="option__item">
+                <label class="check option">
+                  <input class="check__input" type="checkbox" name="option" value="milk">
+                  <span class="check__box"></span>
+                  молоко
+                </label>
+              </li>
+              <li class="option__item">
+                <label class="check option">
+                  <input class="check__input" type="checkbox" name="option" value="vitamins">
+                  <span class="check__box"></span>
+                  витамины
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="submit-form">
+            <div class="submit-form__wrapper">
+              <button class="form__button button" type="submit">отправить заявку</button>
+              <span class="form__button-text">* — Обязательные поля</span>
+            </div>
           </div>
-        </fieldset>
-
-        <fieldset class="data option">
-          <legend class="form__title">Дополнительно</legend>
-          <ul class="option__list">
-            <li class="option__item">
-              <label class="form__label">
-                <input class="visually-hidden" type="checkbox" name="option" value="sweetener" checked>
-                сахарозаменитель
-              </label>
-            </li>
-            <li class="option__item">
-              <label class="form__label">
-                <input class="visually-hidden" type="checkbox" name="option" value="drinking-water">
-                питьевая вода
-              </label>
-            </li>
-            <li class="option__item">
-              <label class="form__label">
-                <input class="visually-hidden" type="checkbox" name="option" value="milk">
-                молоко
-              </label>
-            </li>
-            <li class="option__item">
-              <label class="form__label">
-                <input class="visually-hidden" type="checkbox" name="option" value="vitamins">
-                витамины
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="submit-form">
-          <button class="form__button button" type="submit">отправить заявку</button>
-          <span class="form__button-text">* — Обязательные поля</span>
         </div>
       </form>
 
-      <section class="contacts">
-        <div class="contacts__content">
-          <h2 class="visually-hidden">Контактный адрес</h2>
-          <p class="contacts__info">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>
-            Санкт-Петербург
-          </p>
+      <section class="contacts contacts--bg">
+        <div class="contacts__wrapper">
+          <div class="contacts__content">
+            <h2 class="visually-hidden">Контактный адрес</h2>
+            <p class="contacts__info">приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>
+              Санкт-Петербург
+            </p>
+          </div>
         </div>
       </section>
     </div>
@@ -182,7 +191,8 @@
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в фейсбуке</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              инстаграме</a>
           </li>
         </ul>
       </div>
@@ -191,7 +201,6 @@
           <span class="copyright__text">HTML Academy</span>
         </a>
       </div>
-    </div>
   </footer>
 </body>
 

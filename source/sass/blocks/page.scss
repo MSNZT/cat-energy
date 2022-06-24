@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.page__body::before {
+.page__body--bg::after {
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
@@ -23,6 +23,6 @@
     background-repeat: no-repeat;
     height: 694px;
     width: 720px;
-    z-index: -1;
+    z-index: -2;
   }
 }

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--bg">
 
   <header class="page-header">
     <div class="page-header__wrapper">
@@ -101,55 +101,55 @@
       </div>
     </section>
 
-    <section class="example">
-      <div class="example-wrapper">
-        <div class="example__column">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-            обычный корм на Cat Energy Slim. Отличный результат
-            без изнуряющих тренировок! При этом он не менял своих
-            привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__container">
-            <ul class="example__list">
-              <li class="example__item">
-                <p class="example__value">5 кг</p>
-                <p class="example__name">снижение веса</p>
-              </li>
-              <li class="example__item">
-                <p class="example__value">60 дней</p>
-                <p class="example__name">затрачено времени</p>
-              </li>
-            </ul>
-            <p class="example__price">
-              Затраты на питание:
-              <span class="example__price-value">15 000 руб.</span>
-            </p>
+    <section class="example example--line">
+        <div class="example__wrapper">
+          <div class="example__column">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+              обычный корм на Cat Energy Slim. Отличный результат
+              без изнуряющих тренировок! При этом он не менял своих
+              привычек и по&#8209;прежнему спит по 16 часов в день.</p>
+            <div class="example__container">
+              <ul class="example__list">
+                <li class="example__item">
+                  <p class="example__value">5 кг</p>
+                  <p class="example__name example__name--first">снижение веса</p>
+                </li>
+                <li class="example__item">
+                  <p class="example__value">60 дней</p>
+                  <p class="example__name example__name--second">затрачено времени</p>
+                </li>
+              </ul>
+              <p class="example__price">
+                Затраты на питание:
+                <span class="example__price-value">15 000 руб.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="example__result example__result--before example__result--after">
+            <picture></picture>
+            <picture></picture>
+            <div class="range">
+              <ul class="range__list">
+                <li class="range__item">
+                  <button class="range__button range__button--before">Было</button>
+                </li>
+                <li class="range__item">
+                  <div class="range-controls">
+                    <div class="range__scale">
+                      <div class="range__bar"></div>
+                      <div class="range__toggle"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="range__item">
+                  <button class="range__button range__button--after">Стало</button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="example__result example__result--before example__result--after">
-        <picture></picture>
-        <picture></picture>
-        <div class="range">
-          <ul class="range__list">
-            <li class="range__item">
-              <button class="range__button range__button--before">Было</button>
-            </li>
-            <li class="range__item">
-              <div class="range-controls">
-                <div class="range__scale">
-                  <div class="range__bar"></div>
-                </div>
-                <div class="toggle toggle--layout"></div>
-              </div>
-            </li>
-            <li class="range__item">
-              <button class="range__button range__button--after">Стало</button>
-            </li>
-          </ul>
-        </div>
-      </div>
     </section>
 
     <section class="contacts">
@@ -161,6 +161,9 @@
             Санкт-Петербург
           </p>
         </div>
+      </div>
+      <div class="contacts__map">
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCUJv2s73C" allowfullscreen="true" title="Офис компании по адресу ул. БольшаяКонюшенная, д. 19/8, Санкт-Петербург"></iframe>
       </div>
     </section>
 
