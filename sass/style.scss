@@ -1,8 +1,8 @@
 // Global
 
-@import "global/variables.scss";
-@import "global/global.scss";
 @import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
 
 // Blocks
 
@@ -15,11 +15,8 @@
 @import "blocks/program-types.scss";
 @import "blocks/features.scss";
 @import "blocks/example.scss";
+@import "blocks/range.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
-@import "blocks/main.scss";
-@import "blocks/catalog.scss";
-@import "blocks/additional-goods.scss";
-@import "blocks/form.scss";
-@import "blocks/field.scss";
+@import "blocks/copyright.scss";

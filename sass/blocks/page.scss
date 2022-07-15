@@ -10,19 +10,53 @@
   min-height: 100%;
   margin: 0;
   color: $black;
-  position: relative;
 }
 
-.page__body--bg::after {
-  @media (min-width: $desktop-width) {
+
+
+.page__body--bg {
+  position: relative;
+
+  // @media (min-width: $desktop-width) {
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     right: 0;
+  //     top: 0;
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //     width: 720px;
+  //     height: 694px;
+  //     background-image: url("..//..//img/bg-cat-desktop.png");
+  //     background-repeat: no-repeat;
+  //     z-index: -1;
+  //   }
+  // }
+}
+
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5),
+(min-width: 1440px) and (min-resolution: 144dpi),
+(min-width: 1440px) and (min-resolution: 1.5dppx) {
+  .page__body--bg::after {
+    background-image: url("..//..//img/bg-cat-desktop.png");
+
+  }
+}
+
+@media (min-width: 1440px) {
+  .page__body--bg::after {
+    display: block;
     content: "";
     position: absolute;
+    width: 50%;
+    min-height: 694px;
     top: 0;
     right: 0;
-    background-image: url("..//img/Group.png");
+    left: inherit;
+    background-image: url("..//..//img/bg-cat-desktop.png");
+    background-position: 0%;
     background-repeat: no-repeat;
-    height: 694px;
-    width: 720px;
+    background-size: cover;
     z-index: -2;
   }
 }

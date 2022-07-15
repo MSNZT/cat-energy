@@ -1,0 +1,25 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.copyright__text {
+  font-family: $second-font;
+  line-height: 18px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.copyright__logo {
+  width: 163px;
+  height: 34px;
+}
