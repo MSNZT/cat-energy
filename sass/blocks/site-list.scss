@@ -81,3 +81,9 @@
     }
   }
 }
+
+.site-list__item--color a {
+  @media (min-width: $desktop-width) {
+    color: black;
+  }
+}
