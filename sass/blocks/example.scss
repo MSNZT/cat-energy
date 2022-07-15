@@ -200,8 +200,10 @@
 }
 
 .example__image {
-  object-fit: cover;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 27px;
+  object-fit: cover;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 11px;

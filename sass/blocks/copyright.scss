@@ -20,6 +20,10 @@
 }
 
 .copyright__logo {
-  width: 163px;
+  width: 27px;
   height: 34px;
+  @media (min-width: $desktop-width) {
+    width: 163px;
+    height: 34px;
+  }
 }

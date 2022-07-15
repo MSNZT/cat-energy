@@ -23,8 +23,8 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
-  margin-bottom: 0;
 }
 
 .page-footer__logo img {

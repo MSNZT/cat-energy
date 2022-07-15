@@ -1,0 +1,39 @@
+// .field {
+//   border: 1px solid #E7E7E7;
+//   width: 100%;
+//   padding: 14px 16px;
+
+//   &::placeholder {
+//     font-size: 16px;
+//     line-height: 18px;
+//     font-family: "Oswald", sans-serif;
+//     color: #444444;
+//     text-transform: uppercase;
+//     transform: translateY(1px);
+//   }
+
+//   &::-webkit-input-placeholder {
+//     font-size: 16px;
+//     line-height: 18px;
+//     font-family: "Oswald", sans-serif;
+//     color: #444444;
+//     text-transform: uppercase;
+//   }
+
+//   &:hover {
+//     border: 1px solid $grey-400;
+//   }
+
+//   &:focus {
+//     outline: 2px solid $black;
+//   }
+
+//   &:invalid {
+//     border: 2px solid #FF8282;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     font-size: 20px;
+//     line-height: 30px;
+//   }
+// }
