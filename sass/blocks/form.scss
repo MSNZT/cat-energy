@@ -35,10 +35,35 @@
   background-color: $white;
   position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 55%;
+    height: 2px;
+    width: 100vw;
+    transform: translateY(-15%);
+    background-color: $green-600;
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin-left: -40px;
     font-size: 36px;
     line-height: 36px;
     max-width: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 55%;
+      right: -40px;
+      height: 2px;
+      width: 100vw;
+      transform: translateY(-15%);
+      background-color: $green-600;
+      z-index: -1;
+    }
   }
 }
 
@@ -50,9 +75,14 @@
   }
 }
 
+.owner-data {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
 .review-option {
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
     margin-bottom: 76px;
   }
 }
@@ -72,6 +102,9 @@
 }
 
 .data-form {
+  padding: 0 20px;
+  margin-left: -20px;
+  margin-right: -20px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -122,6 +155,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -175,9 +212,13 @@
 }
 
 .program-type-form {
+  padding: 0 20px;
+  margin-left: -20px;
+  margin-right: -20px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    border-bottom: 0;
     border: 1px solid #e7e7e7;
     margin-bottom: 76px;
   }
