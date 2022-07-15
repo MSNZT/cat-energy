@@ -1186,9 +1186,16 @@ a {
   }
 }
 
-.page__wrapper {
-  padding-left: 41px;
-  padding-right: 36px;
+@media (min-width: 768px) {
+  .page__wrapper {
+    padding-left: 41px;
+    padding-right: 36px;
+  }
+}
+@media (min-width: 1440px) {
+  .page__wrapper {
+    padding: 0;
+  }
 }
 
 .page-main__title {
@@ -1226,9 +1233,11 @@ a {
   }
 }
 
-.form__index-column {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 1440px) {
+  .form__index-column {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__title {
