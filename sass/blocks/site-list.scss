@@ -33,6 +33,24 @@
   }
 }
 
+.body-page .site-list__item {
+  @media (min-width: $tablet-width) {
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background-color: $green-600;
+      }
+    }
+  }
+}
+
 .site-list__item a {
   position: relative;
   font-size: 20px;

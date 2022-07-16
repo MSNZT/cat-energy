@@ -244,6 +244,21 @@ a {
   }
 }
 
+@media (min-width: 768px) {
+  .body-page .site-list__item--active {
+    position: relative;
+  }
+  .body-page .site-list__item--active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #68b738;
+  }
+}
+
 .site-list__item a {
   position: relative;
   font-size: 20px;
@@ -1853,6 +1868,120 @@ a {
     max-height: 174px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.catalog__wrapper {
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .catalog__wrapper {
+    width: 92%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 60px;
+  }
+}
+
+.catalog__item {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 20px 20px 25px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+@media (min-width: 768px) {
+  .catalog__item {
+    width: 248px;
+    border: none;
+    padding: 0 36px;
+    margin: 0;
+    margin-bottom: 140px;
+    background-color: #f2f2f2;
+  }
+  .catalog__item:nth-last-child(1) {
+    width: 246px;
+    border: 2px solid #f2f2f2;
+    background-color: white;
+  }
+  .catalog__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 22px;
+}
+
+.catalog__item-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-item__title {
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  margin-right: 24px;
+}
+@media (min-width: 768px) {
+  .product-item__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 0;
+    margin: 0px 45px 21px;
+    text-align: center;
+  }
+}
+
+.description-goods {
+  width: 100%;
+}
+
+.description-goods__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-goods__cell {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+@media (min-width: 768px) {
+  .description-goods__cell {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.product-button {
+  display: block;
+  text-align: center;
+  padding: 7px 0;
+}
+@media (min-width: 768px) {
+  .product-button {
+    margin-bottom: 40px;
+    padding: 8px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
