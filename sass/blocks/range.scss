@@ -45,7 +45,10 @@
 }
 
 .range__toggle {
+  display: none;
+
   @media (min-width: $tablet-width) {
+    display: block;
     cursor: pointer;
 
     &::before {

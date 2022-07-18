@@ -75,7 +75,7 @@
   }
 }
 
-.owner-data {
+.contacts {
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
@@ -102,13 +102,24 @@
 }
 
 .data-form {
-  padding: 0 20px;
-  margin-left: -20px;
-  margin-right: -20px;
-  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 1px;
+    background-color: #d9d9d9;
+    left: -20px;
+    right: -20px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    border-bottom: 0;
     margin-bottom: 72px;
   }
 
@@ -151,7 +162,7 @@
 
 // Contact field
 
-.contact__list {
+.contacts__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -166,7 +177,7 @@
   }
 }
 
-.contact__item {
+.contacts__item {
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
@@ -178,7 +189,7 @@
   }
 }
 
-.contact__item:nth-last-child(1) {
+.contacts__item:nth-last-child(1) {
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
@@ -199,7 +210,7 @@
   }
 }
 
-.contact-field {
+.contacts-field {
   margin-left: 13px;
   width: 100%;
 
@@ -213,13 +224,24 @@
 }
 
 .program-type-form {
-  padding: 0 20px;
-  margin-left: -20px;
-  margin-right: -20px;
-  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 1px;
+    background-color: #d9d9d9;
+    left: -20px;
+    right: -20px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    border-bottom: 0;
     border: 1px solid #e7e7e7;
     margin-bottom: 76px;
   }
@@ -326,16 +348,16 @@
 .check__input:checked+.check__radio::after {
   content: "";
   position: absolute;
-  top: 28%;
-  left: 28%;
+  top: 7px;
+  left: 7px;
   width: 13px;
   height: 13px;
   background-color: $green-600;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 26%;
-    left: 26%;
+    top: 9px;
+    left: 9px;
     width: 18px;
     height: 18px;
   }
@@ -344,22 +366,22 @@
 .check__input:checked:focus+.check__radio::after {
   content: "";
   position: absolute;
-  top: 28%;
-  left: 28%;
+  top: 7px;
+  left: 7px;
   width: 13px;
   height: 13px;
   background-color: $green-600;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 26%;
-    left: 26%;
+    top: 9px;
+    left: 9px;
     width: 18px;
     height: 18px;
   }
 }
 
-.option__list {
+.more-option__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -380,7 +402,7 @@
   }
 }
 
-.option__item {
+.more-option__item {
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
