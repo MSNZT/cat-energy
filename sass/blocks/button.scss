@@ -5,4 +5,18 @@
   text-align: center;
   color: white;
   background-color: $green-600;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $green-700;
+  }
+
+  &:focus {
+    background-color: $green-700;
+  }
+
+  &:active {
+    background-color: $green-700;
+    color: rgba($color: #ffffff, $alpha: 0.3)
+  }
 }

@@ -22,7 +22,8 @@
 .copyright__logo {
   width: 27px;
   height: 34px;
-  @media (min-width: $desktop-width) {
+
+  @media (min-width: $tablet-width) {
     width: 163px;
     height: 34px;
   }
