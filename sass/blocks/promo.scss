@@ -2,18 +2,19 @@
   position: relative;
   min-height: 489px;
   background-repeat: no-repeat;
+  background-size: 320px 305px, 100%;
+  background-position: top center;
+  background-image: url("..//..//img/background-cat-mobile.jpg"), linear-gradient(180deg, #64a83b 62.4%, #fff 62.4%);
 
-  @media (-webkit-min-device-pixel-ratio: 1.5),
-  (min-resolution: 144dpi) {
-    background-image: url("..//..//img/background-cat.png"), linear-gradient(180deg, #64a83b 62.4%, #fff 62.4%);
-    background-size: 320px 305px, 100%;
-    background-position: top center;
+  @media (min-resolution: 2dppx) {
+    background-image: url("..//..//img/background-cat-mobile@2x.jpg"), linear-gradient(180deg, #64a83b 62.4%, #fff 62.4%);
   }
 
   @media (min-width: $tablet-width) {
     background-image: none;
   }
 }
+
 
 .promo__wrapper {
   padding: 0 20px;
@@ -61,7 +62,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 111px;
+    padding-top: 106px;
   }
 }
 

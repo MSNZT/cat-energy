@@ -12,16 +12,6 @@
   color: $black;
 }
 
-
-@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5),
-(min-width: 1440px) and (min-resolution: 144dpi),
-(min-width: 1440px) and (min-resolution: 1.5dppx) {
-  .page__body--bg::after {
-    background-image: url("..//..//img/bg-cat-desktop.png");
-
-  }
-}
-
 @media (min-width: 1440px) {
   .page__body--bg::after {
     display: block;
@@ -32,10 +22,15 @@
     top: 0;
     right: 0;
     left: inherit;
-    background-image: url("..//..//img/bg-cat-desktop.png");
+    background-image: url("..//img/bg-cat-desktop.jpg");
     background-position: 0%;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("..//..//img/bg-cat-desktop@2x.jpg");
+    }
   }
 }
+

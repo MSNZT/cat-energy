@@ -20,11 +20,35 @@
 }
 
 .copyright__logo {
-  width: 27px;
-  height: 34px;
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
-    width: 163px;
-    height: 34px;
+    display: none;
   }
+}
+
+.copyright__link:focus .copyright__logo {
+  fill: $green-600;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.copyright__logo1 {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    fill: #666666;
+  }
+}
+
+.copyright__link:hover .copyright__logo1 {
+  fill: $green-600;
+}
+
+.copyright__link:focus .copyright__logo1 {
+  opacity: 0.3;
 }
