@@ -431,6 +431,7 @@ a {
     margin-bottom: 49px;
     font-size: 20px;
     line-height: 20px;
+    max-width: 410px;
     color: black;
     text-align: left;
   }
@@ -529,6 +530,8 @@ a {
 }
 @media (min-width: 1440px) {
   .program-type__content {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 0;
     padding: 77px 51px 59px;
     max-width: 570px;
@@ -579,6 +582,14 @@ a {
     right: -230px;
   }
 }
+@media (min-width: 1440px) {
+  .cat-weight-loss {
+    width: 100px;
+    height: 106px;
+    top: -39px;
+    left: 0;
+  }
+}
 
 .program-type__title--gain {
   position: relative;
@@ -595,8 +606,17 @@ a {
   .cat-weight-gain {
     width: 268px;
     height: 200px;
+    top: 10px;
     left: auto;
-    right: -280px;
+    right: -248px;
+  }
+}
+@media (min-width: 1440px) {
+  .cat-weight-gain {
+    width: 134px;
+    height: 100px;
+    top: -39px;
+    left: -20px;
   }
 }
 
@@ -618,6 +638,17 @@ a {
   }
 }
 
+@media (min-width: 768px) {
+  .program-type__text--width {
+    max-width: 342px;
+  }
+}
+@media (min-width: 1440px) {
+  .program-type__text--width {
+    max-width: none;
+  }
+}
+
 .program-type__link {
   display: inline-block;
   padding-top: 15px;
@@ -630,6 +661,11 @@ a {
     padding: 0;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .program-type__link {
+    margin-top: auto;
   }
 }
 .program-type__link::after {
@@ -700,9 +736,23 @@ a {
 }
 
 .features__item {
-  padding-left: 80px;
   margin-bottom: 24px;
   position: relative;
+}
+.features__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .features__item::before {
+    width: 80px;
+    height: 80px;
+  }
 }
 @media (min-width: 768px) {
   .features__item {
@@ -730,18 +780,37 @@ a {
 }
 
 .features__description {
+  padding-left: 80px;
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  min-height: 54px;
 }
 @media (min-width: 768px) {
   .features__description {
+    padding: 0;
     padding-top: 151px;
     max-width: 222px;
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.features__item--leaf::before {
+  background-image: url("..//img/leaf.svg");
+}
+
+.features__item--tub::before {
+  background-image: url("..//img/tub.svg");
+}
+
+.features__item--eat::before {
+  background-image: url("..//img/eat.svg");
+}
+
+.features__item--alarm::before {
+  background-image: url("..//img/alarm.svg");
 }
 
 .example {

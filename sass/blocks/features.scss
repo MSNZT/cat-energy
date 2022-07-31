@@ -39,9 +39,23 @@
 }
 
 .features__item {
-  padding-left: 80px;
   margin-bottom: 24px;
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $green-600;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 37px;
@@ -70,15 +84,34 @@
 }
 
 .features__description {
+  padding-left: 80px;
   margin: 0;
   font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
+  min-height: 54px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     padding-top: 151px;
     max-width: 222px;
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.features__item--leaf::before {
+  background-image: url("..//img/leaf.svg");
+}
+
+.features__item--tub::before {
+  background-image: url("..//img/tub.svg");
+}
+
+.features__item--eat::before {
+  background-image: url("..//img/eat.svg");
+}
+
+.features__item--alarm::before {
+  background-image: url("..//img/alarm.svg");
 }
