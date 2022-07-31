@@ -72,8 +72,16 @@
 }
 
 .additional-goods__item {
-  border-top: 1px solid $grey-400;
-  border-bottom: 1px solid $grey-400;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid $grey-400;
+  }
 }
 
 .additional-goods__column {

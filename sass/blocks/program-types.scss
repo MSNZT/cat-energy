@@ -26,8 +26,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
     padding: 77px 278px 57px 52px;
+    margin-bottom: 30px;
+    min-height: 372px;
   }
 
   @media (min-width: $desktop-width) {
