@@ -1744,17 +1744,68 @@ z .example__image {
 }
 
 .contacts-field {
+  font-family: "Oswald", sans-serif;
   margin-left: 13px;
   width: 100%;
+  background-repeat: no-repeat;
+  border: 1px solid #cdcdcd;
+  padding: 10px 45px 13px 10px;
+}
+.contacts-field::-moz-placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #444444;
+  transform: translatey(1px);
+}
+.contacts-field::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #444444;
+  transform: translatey(1px);
+}
+@media (min-width: 768px) {
+  .contacts-field::-moz-placeholder {
+    font-size: 20px;
+    line-height: 30;
+  }
+  .contacts-field::placeholder {
+    font-size: 20px;
+    line-height: 30;
+  }
 }
 @media (min-width: 768px) {
   .contacts-field {
-    padding: 12px 20px;
+    padding: 15px 75px 15px 22px;
   }
 }
 @media (min-width: 1440px) {
   .contacts-field {
+    padding: 14px 75px 14px 18px;
     width: 478px;
+  }
+}
+
+.contacts-field--mail {
+  background-image: url("..//img/icon-email.svg");
+  background-position: right 15px top 50%;
+}
+@media (min-width: 768px) {
+  .contacts-field--mail {
+    background-position: right 20px top 50%;
+  }
+}
+
+.contacts-field--phone {
+  background-image: url("..//img/icon-phone.svg");
+  background-position: right 13px top 50%;
+}
+@media (min-width: 768px) {
+  .contacts-field--phone {
+    background-position: right 18px top 50%;
   }
 }
 
@@ -2490,7 +2541,7 @@ z .example__image {
 .additional-goods__header::after {
   content: "";
   position: absolute;
-  bottom: 12px;
+  bottom: 10px;
   height: 2px;
   width: 100vw;
   background-color: #68b738;
